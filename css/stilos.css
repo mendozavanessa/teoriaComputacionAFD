@@ -1,0 +1,116 @@
+body{
+  padding: 0;
+}
+footer{
+  width: 100%;
+  padding: 10px;
+}
+.MostrarAutomata{
+  margin: 10px;
+  background: black;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+.imgAutomata{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+  border: solid black 3px;
+  border-radius: 15px;
+}
+.entrada{
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+article{
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.descripcion{
+  width: 90%;
+  height: 180px;
+  margin: auto;
+  border: solid black 3px;;
+  border-radius: 15px;
+  text-align: justify;
+  margin-top: 25px;;
+}
+.col-8{
+  background: linear-gradient(180deg, white,blue,white);
+  padding: 1rem;
+  margin-left: 1rem;
+}
+input[value="comprobar"]{
+  background: yellow;
+  width: 35%;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 0px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#EntradaEnteros{
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#EntradaReales{
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#EntradaVariables{
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.texto_blanco{
+  color: white;
+}
+.estados{
+  background: white;
+  border: solid black 3px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.titulo_afd{
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.estados p{
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.imgTabla{
+  width: 100%;
+}
+.imgTabla img{
+  width: 100%;
+}
+h3{
+  color: blue;
+  margin: 1rem;
+}
+.footer{
+  background: black;
+  color: white;
+  font-size: 1rem;
+}

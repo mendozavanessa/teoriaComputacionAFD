@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>automata</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="css/stilos.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/TC.js"></script>
+</head>
+<body>
+  <div class="container-fluid bg-dark" style="padding: 3rem">
+    <h1 class="text-center texto_blanco">TEORIA DE LA COMPUTACION</h1>
+    <div class="container">
+      <div class=" row">
+        <div class="col-3" style="background: linear-gradient(180deg, white,#9de1fe,white);">
+          <h3>ENTRADAS</h3>
+          <input class="MostrarAutomata" type="button" value="Automata de Entero" onclick="MostrarEnteros()">
+          <input class="MostrarAutomata" type="button" value="Automata de Reales" onclick="MostrarReales()">
+          <input class="MostrarAutomata" type="button" value="Automata de variables" onclick="MostrarVariables()">
+        </div>
+        <div class="col-9" style="background: linear-gradient(180deg, white,#9de1fe,white);">
+          <div class="row">
+            <article id="article-1">
+              <div class="col-8">
+                <img class="imgAutomata" src="img/AutomataEnteros.PNG" alt="imagen automata">
+                <div class="entrada">
+                  <p class="texto_blanco">números enteros</p>
+                  <input id="EntradaEnteros" type="text">
+                  <input id="ButtonEntradaEnteros" type="button" value="comprobar" onclick="LeerEntradaEnteros()">
+                  <input id="ButtonLimpiar1" type="button" value="limpiar" onclick="Limpiar()">
+                </div>
+                <p class="text-center texto_blanco">DESCRIPCION DEL AUTOMATA FINITO DETERMINISTICO</p>
+                <div class="col-13 estados">
+                  <span class="titulo_afd">alfbeto</span>
+                  <p>Σ = {-,1,2,3,4,5,6,7,8,9}</p>
+                  <span class="titulo_afd">estados</span>
+                  <p>E = {q0,q1,q2,q3,q4}</p>
+                  <span class="titulo_afd">estado inicial</span>
+                  <p>E = {q0}</p>
+                  <span class="titulo_afd">estado final</span>
+                  <p>E = {q2,q3}</p>
+                </div>
+                <div class="col-13 imgTabla">
+                  <p class="text-center texto_blanco">TABLA DE TRANSICIONES</p>
+                  <img src="img/transicionesENTEROSAFD.PNG" alt="">
+                </div>
+              </div>
+              <div class="col-3 descripcion">
+                <h4>Descripción</h4>
+                <p>
+                  Este automata acepta cadenas de números enteros que no tengan dos pares o impares consecutivos.
+                </p>
+              </div>
+            </article>
+            <article id="article-2">
+              <div class="col-8">
+                <img class="imgAutomata" src="img/realAFD.PNG" alt="imagen automata">
+                <div class="entrada">
+                  <p class="texto_blanco">números reales</p>
+                  <input id="EntradaReales" type="text">
+                  <input id="ButtonEntradaReales" type="button" value="comprobar" onclick="LeerEntradaReales()">
+                  <input id="ButtonLinpiar2" type="button" value="limpiar" onclick="Limpiar()">
+                </div>
+                <p class="text-center texto_blanco">DESCRIPCION DEL AUTOMATA FINITO DETERMINISTICO</p>
+                <div class="col-13 estados">
+                  <span class="titulo_afd">alfbeto</span>
+                  <p>Σ = {-,.,0,1,2,3,4,5,6,7,8,9}</p>
+                  <span class="titulo_afd">estados</span>
+                  <p>E = {q1,q2,q3,q4,q5,q6}</p>
+                  <span class="titulo_afd">estado inicial</span>
+                  <p>E = {q1}</p>
+                  <span class="titulo_afd">estado final</span>
+                  <p>E = {q3,q6}</p>
+                </div>
+                <div class="col-13 imgTabla">
+                  <p class="text-center texto_blanco">TABLA DE TRANSICIONES</p>
+                  <img src="img/Estado2.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-3 descripcion">
+                <h4>Descripción</h4>
+                <p class="align-text-top">
+                  Este automata acepta palabras que sean números enteros o tengan par de digitos en la parte decimal.
+                </p>
+              </div>
+            </article>
+            <article id="article-3">
+              <div class="col-8">
+                <img class="imgAutomata" src="img/variable.gif" alt="imagen automata">
+                <div class="entrada">
+                  <p class="texto_blanco">variables</p>
+                  <input id="EntradaVariables" type="text">
+                  <input id="ButtonEntradaVariables   " type="button" value="comprobar" onclick="LeerEntradaVariables()">
+                  <input id="ButtonLinpiar3" type="button" value="limpiar" onclick="Limpiar()">
+                </div>
+                <p class="text-center texto_blanco">DESCRIPCION DEL AUTOMATA FINITO DETERMINISTICO</p>
+                <div class="col-13 estados">
+                  <span class="titulo_afd">alfbeto</span>
+                  <p>Σ = {-,1,2,3,4,5,6,7,8,9}</p>
+                  <span class="titulo_afd">estados</span>
+                  <p>E = {q0,q1,q2,q3}</p>
+                  <span class="titulo_afd">estado inicial</span>
+                  <p>E = {q0}</p>
+                  <span class="titulo_afd">estado final</span>
+                  <p>E = {q3}</p>
+                </div>
+                <div class="col-13 imgTabla">
+                  <p class="text-center texto_blanco">TABLA DE TRANSICIONES</p>
+                  <img src="img/transicionesENTEROSAFD.PNG" alt="">
+                </div>
+              </div>
+              <div class="col-3 descripcion">
+                <h4>Descripción</h4>
+                <p>
+                  Este automata acepta palabras que tengan los números del 1 al 9, intercalados pares con impares.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer align-text-bottom">
+    <p>Trabajo realizado por:</p>
+    <p>
+      <ul>Huaman Lonconi Marco Antonio</ul>
+      <ul>Mendoza Inoñan Vanessa</ul>
+      <ul>Cconislla Medina Anthony Aldair</ul>
+    </p>
+  </footer>
+</body>
+</html>
